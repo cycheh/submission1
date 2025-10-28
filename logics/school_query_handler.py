@@ -127,6 +127,7 @@ def generate_response_based_on_school_details(user_message, school_details):
     Complete with details such as location, contact information, mrt stations, subjects offered and CCA offered etc.
     Take note especially for the subjects offered. If there are certain subjects present in the {school_details} dict that the customer asked about, you need to tell the customer.
     Take note especially for the co-curricular activities or cca offered. If there are certain cca present in the {school_details} dict that the customer asked about, you need to tell the customer.
+    Take note especially for the location details. If there are mrt stations present in the {school_details} dict that the customer asked about, you need to tell the customer.
     You must only rely on the facts or information in the school details.
     Your response should be as detailed as possible and \
     include information that is useful for customer to better understand the school.
@@ -138,6 +139,7 @@ def generate_response_based_on_school_details(user_message, school_details):
     Complete with details such as location, contact information, mrt stations, subjects and CCA offered etc. 
     Take note especially for the subjects offered. If there are certain subjects present in the {school_details} dict that the customer asked about, you need to tell the customer.
     Take note especially for the co-curricular activities or cca offered. If there are certain cca present in the {school_details} dict that the customer asked about, you need to tell the customer.
+    Take note especially for the location details. If there are mrt stations present in the {school_details} dict that the customer asked about, you need to tell the customer.
     Use Neural Linguistic Programming to construct your response.
 
     Use the following format:

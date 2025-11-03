@@ -2,6 +2,14 @@ import streamlit as st
 import pandas as pd
 import json
 
+# region <--------- Streamlit App Configuration --------->
+st.set_page_config(
+    layout="centered",
+    page_title="My Streamlit App"
+)
+# endregion <--------- Streamlit App Configuration --------->
+
+st.title(":art: Dataset on School CCAs")
 
 # Load the JSON file
 
@@ -20,6 +28,6 @@ df
 
 st.write(":woozy: Oops, the dataset may be too big to be viewed in this page. You can access the original data source using the below link!")
 
-st.write("Ministry of Education. (2017). Co-curricular activities (CCAs) (2025) [Dataset]. data.gov.sg.")
+st.write("Source: Ministry of Education. (2017). Co-curricular activities (CCAs) (2025) [Dataset]. data.gov.sg.")
 
 st.link_button("Access the CCA dataset here", "https://data.gov.sg/datasets?topics=education&resultId=d_9aba12b5527843afb0b2e8e4ed6ac6bd&page=1")

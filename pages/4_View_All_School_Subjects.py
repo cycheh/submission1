@@ -9,7 +9,7 @@ st.set_page_config(
 )
 # endregion <--------- Streamlit App Configuration --------->
 
-st.title(":books: Dataset on Subjects Offered by Schools")
+st.title(":books: Dataset on School Subjects")
 
 # Load the JSON file
 

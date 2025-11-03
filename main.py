@@ -18,10 +18,12 @@ st.set_page_config(
 )
 # endregion <--------- Streamlit App Configuration --------->
 
-st.title(":round_pushpin: :school: Welcome to the School Navigator App! :tada:")
+st.title(":school: Welcome to the School Navigator App! :balloon:")
 
 with st.expander(":mag_right: Disclaimer"):
-    st.write(":pink[IMPORTANT NOTICE]: This web application is a prototype developed for educational purposes only.")
+    st.write("<span style='color: pink;'>IMPORTANT NOTICE:</span>", unsafe_allow_html=True)
+
+    st.write("This web application is a prototype developed for educational purposes only.")
 
     st.write("The information provided here is NOT intended for real-world usage and should not be relied upon for making any decisions, especially those related to financial, legal, or healthcare matters.")
 

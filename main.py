@@ -18,10 +18,10 @@ st.set_page_config(
 )
 # endregion <--------- Streamlit App Configuration --------->
 
-st.title("Streamlit App")
+st.title(":round_pushpin: :school: Welcome to the School Navigator App! :tada:")
 
 with st.expander(":mag_right: Disclaimer"):
-    st.write("IMPORTANT NOTICE: This web application is a prototype developed for educational purposes only.")
+    st.write(":pink[IMPORTANT NOTICE]: This web application is a prototype developed for educational purposes only.")
 
     st.write("The information provided here is NOT intended for real-world usage and should not be relied upon for making any decisions, especially those related to financial, legal, or healthcare matters.")
 
@@ -29,11 +29,17 @@ with st.expander(":mag_right: Disclaimer"):
 
     st.write("Always consult with qualified professionals for accurate and personalized advice.")
     
+with st.expander(":crystal_ball: Click here for some example questions that School Navigator can help you with! Do note that you have to provide the app with specific school names."):
+    st.write("1. What interesting CCAs and school subjects does Raffles Institution offer?")
+
+    st.write("2. What are the location details of Dunman High School?")
+
+    st.write("3. Does Eunoia Junior College or National Junior College offer Geography as a subject?")
 
 form = st.form(key="form")
-form.subheader("Prompt")
+form.subheader(":love_letter: What queries do you have for School Navigator?")
 
-user_prompt = form.text_area("Enter your prompt here", height=200)
+user_prompt = form.text_area("Ask away!", height=200)
 
 if form.form_submit_button("Submit"):
     

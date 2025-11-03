@@ -18,6 +18,8 @@ for school_name, details_dict in cca_dict.items():
 df = pd.DataFrame(list_of_dict)
 df
 
+st.write(":woozy: Oops, the dataset may be too big to be viewed in this page. You can access the original data source using the below link!")
+
 st.write("Ministry of Education. (2017). Co-curricular activities (CCAs) (2025) [Dataset]. data.gov.sg.")
 
 st.link_button("Access the CCA dataset here", "https://data.gov.sg/datasets?topics=education&resultId=d_9aba12b5527843afb0b2e8e4ed6ac6bd&page=1")

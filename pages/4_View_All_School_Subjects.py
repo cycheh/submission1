@@ -20,6 +20,6 @@ df
 
 st.write(":woozy: Oops, the dataset may be too big to be viewed in this page. You can access the original data source using the below link!")
 
-st.write("Ministry of Education. (2017). Subjects Offered (2025) [Dataset]. data.gov.sg.")
+st.write("Source: Ministry of Education. (2017). Subjects Offered (2025) [Dataset]. data.gov.sg.")
 
 st.link_button("Access the Subjects Offered dataset here", "https://data.gov.sg/datasets?topics=education&resultId=d_f1d144e423570c9d84dbc5102c2e664d&page=1")

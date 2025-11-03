@@ -120,6 +120,9 @@ def generate_response_based_on_school_details(user_message, school_details):
 
     Step 1:{delimiter} If the user is asking about school details, \
     understand the relevant school details in the dict below.
+    If the original customer query asks about something other than location, contact information, mrt stations, subjects offered and CCA offered, rely on facts or information \
+    to address the query. If there is no available info to address the query, tell the customer you do not know and redirect the query to the topics above. Do not hallucinate \
+    or give false information.
     {school_details}
 
     Step 2:{delimiter} Use the information about the school details to \
@@ -129,6 +132,9 @@ def generate_response_based_on_school_details(user_message, school_details):
     Take note especially for the co-curricular activities or cca offered. If there are certain cca present in the {school_details} dict that the customer asked about, you need to tell the customer.
     Take note especially for the location details. If there are mrt stations present in the {school_details} dict that the customer asked about, you need to tell the customer.
     You must only rely on the facts or information in the school details.
+    If the original customer query asks about something other than location, contact information, mrt stations, subjects offered and CCA offered, rely on facts or information \
+    to address the query. If there is no available info to address the query, tell the customer you do not know and redirect the query to the topics above. Do not hallucinate \
+    or give false information.
     Your response should be as detailed as possible and \
     include information that is useful for customer to better understand the school.
 
@@ -140,6 +146,9 @@ def generate_response_based_on_school_details(user_message, school_details):
     Take note especially for the subjects offered. If there are certain subjects present in the {school_details} dict that the customer asked about, you need to tell the customer.
     Take note especially for the co-curricular activities or cca offered. If there are certain cca present in the {school_details} dict that the customer asked about, you need to tell the customer.
     Take note especially for the location details. If there are mrt stations present in the {school_details} dict that the customer asked about, you need to tell the customer.
+    If the original customer query asks about something other than location, contact information, mrt stations, subjects offered and CCA offered, rely on facts or information \
+    to address the query. If there is no available info to address the query, tell the customer you do not know and redirect the query to the topics above. Do not hallucinate \
+    or give false information.
     Use Neural Linguistic Programming to construct your response.
 
     Use the following format:

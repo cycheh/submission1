@@ -17,3 +17,7 @@ for school_name, details_dict in location_dict.items():
 # display the `dict_of_course` as a Pandas DataFrame
 df = pd.DataFrame(list_of_dict)
 df
+
+st.write("Ministry of Education. (2017). General information of schools (2025) [Dataset]. data.gov.sg.")
+
+st.link_button("Access the General Information dataset here", "https://data.gov.sg/datasets?topics=education&resultId=d_688b934f82c1059ed0a6993d2a829089&page=1")

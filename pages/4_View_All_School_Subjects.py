@@ -2,6 +2,14 @@ import streamlit as st
 import pandas as pd
 import json
 
+# region <--------- Streamlit App Configuration --------->
+st.set_page_config(
+    layout="centered",
+    page_title="My Streamlit App"
+)
+# endregion <--------- Streamlit App Configuration --------->
+
+st.title(":books: Dataset on Subjects Offered by Schools")
 
 # Load the JSON file
 
